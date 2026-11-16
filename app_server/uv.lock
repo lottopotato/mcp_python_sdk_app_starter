@@ -501,9 +501,9 @@ wheels = [
 ]
 
 [[package]]
-name = "python-mcp-server"
+name = "python-mcp-app-server"
 version = "0.1.0"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "mcp", extra = ["cli"] },
     { name = "rich" },

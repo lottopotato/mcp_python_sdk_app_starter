@@ -1,0 +1,26 @@
+[project]
+name = "python-mcp-tool-server"
+version = "0.1.0"
+description = "Starter for an MCP tool server called by LLM agents (Bearer auth, stateless Streamable HTTP)"
+readme = "README.md"
+authors = [
+    { name = "김현호" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=2.3.0",
+    "python-dotenv>=1.0.0",
+    "rich>=15.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.24.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"

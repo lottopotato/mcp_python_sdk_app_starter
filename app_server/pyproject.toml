@@ -1,7 +1,7 @@
 [project]
-name = "python-mcp-server"
+name = "python-mcp-app-server"
 version = "0.1.0"
-description = "Add your description here"
+description = "Starter for an MCP server called by your own programs (tools + REST routes)"
 readme = "README.md"
 authors = [
     { name = "김현호" }
